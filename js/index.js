@@ -2,7 +2,6 @@ const input = document.getElementById("inputText");
 const submitButton = document.getElementById("submitButton");
 const showTask=document.getElementById("taskList");
 
-
 let tasks=[];
 let editIndex=null;
 
@@ -31,7 +30,6 @@ function renderTask(){
         editBtn.onclick=()=>handleEdit(index);
 
 
-
         // delete Button
         const deleteBtn=document.createElement("button");
         deleteBtn.className="btn btn-danger btn-sm";
@@ -47,13 +45,8 @@ function renderTask(){
         taskItem.appendChild(actions);
 
         showTask.appendChild(taskItem);
-
-
     })
-
-
 }
-
 
 
 // Function HangelAddTask
@@ -95,7 +88,6 @@ function handleDelete(index){
         renderTask()
     }
 }
-
 
 
 // task add/update Submit Button Event Lisener
